@@ -1,4 +1,5 @@
 $(document).on('ready', function() {
+    
     console.log("I'm ready BITCH!");
     // First call to populate some data
     $.ajax({
