@@ -58,51 +58,67 @@ session_start();
         $rawJsonString = file_get_contents("php://input");
         // Make it a associative array (true, second param)
         $jsonData = json_decode($rawJsonString, true);
-        
+        switch($_GET["dataRequested"]){
+          case 'leagues':
+            get_leagues();
+            break;
+          default:
+            break;
+        }
+       
+
+    }
+    
+    function get_leagues(){
         /*
         * Database section
         */
-        $connUrl = getenv('JAWSDB_MARIA_URL');
-        //$connUrl = "mysql://j4dca6gxki2p2a7s:puwg05o53pi5g1r0@p2d0untihotgr5f6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/hllilhmqaqrauk1m";
-        $hasConnUrl = !empty($connUrl);
-        $connParts = null;
-        if ($hasConnUrl) {
-            $connParts = parse_url($connUrl);
-        }
-        //var_dump($hasConnUrl);
-        $host = $hasConnUrl ? $connParts['host'] : getenv('IP');
-        $dbname = $hasConnUrl ? ltrim($connParts['path'],'/') : 'crime_tips';
-        $username = $hasConnUrl ? $connParts['user'] : getenv('C9_USER');
-        $password = $hasConnUrl ? $connParts['pass'] : '';
-        
-        $dbConn =  new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-        
         // Setup to exception on errors (will go to php_errors.log)
-        $dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        
-        // Compose the SQL statement
-        $sql = " SELECT * FROM leagues WHERE 1";
-        
-        // Prepare the statement
-        $stmt = $dbConn -> prepare ($sql);
-        
-        // Execute the statement, passing in array of parameters
-        $stmt -> execute (  array ()  );
-        
-        // Process the results if there are any
-        $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        echo json_encode($rows);
-        
-        
-        
-        //echo ($jsonData);
-         // TODO: do stuff to get the $results which is an associative array
-        //$results = array();
-        //array_push($results, "Passed from onGet Method in my php");
+        try{
+          $dbConn = get_database_connection(); 
+          // Compose the SQL statement
+          $sql = " SELECT * FROM league WHERE 1";
+          
+          // Prepare the statement
+          $stmt = $dbConn -> prepare ($sql);
+          
+          // Execute the statement, passing in array of parameters
+          $stmt -> execute ();
+          
+          // Process the results if there are any
+          $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+          echo('<table class="table table-striped table-dark">');
+          echo('<thead><tr><th scope="col">Name</th>');
+          echo('<th scope="col">Nation</th>');
+          echo('<th scope="col">Seasons</th>');
+          echo('<th scope="col">First Season</th>');
+          echo('<th scope="col">Last Season</th></tr></thead><tbody>');
+          foreach($rows as $row){
+            echo('<tr><th scope="row">'.$row["name"].'</th>
+            <td>'.$row["nation"].'</td>
+            <td>'.$row["seasons_available"].'</td>
+            <td>'.$row["first_season"].'</td>
+            <td>'.$row["most_recent_season"].'</td></tr>');
+           }
+          echo('</tbody></table>');
+          
 
-        // Sending back down as JSON
-        //echo json_encode($results);
-    
+        }catch (PDOException $ex) {
+        switch ($ex->getCode()) {
+          case "23000":
+            echo json_encode(array(
+              "success" => false, 
+              "message"=> "email taken, try another",
+              "details" => $ex->getMessage()));
+            break;
+          default:
+            echo json_encode(array(
+              "success" => false, 
+              "message"=> $ex->getMessage(),
+              "details" => $ex->getMessage()));
+            break;
+        }
+        }
     }
 
 php?>

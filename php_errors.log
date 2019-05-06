@@ -1,0 +1,12 @@
+[06-May-2019 20:11:10 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting identifier (T_STRING) in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 90
+[06-May-2019 20:11:41 UTC] PHP Parse error:  syntax error, unexpected '$results' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 91
+[06-May-2019 20:13:08 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 90
+[06-May-2019 20:13:08 UTC] PHP Stack trace:
+[06-May-2019 20:13:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[06-May-2019 20:13:08 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:18
+[06-May-2019 20:13:08 UTC] PHP   3. get_leagues() /home/ubuntu/workspace/soccer_data/api/soccer.php:63
+[06-May-2019 20:13:08 UTC] PHP   4. json_decode() /home/ubuntu/workspace/soccer_data/api/soccer.php:90
+[06-May-2019 20:20:01 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 91
+[06-May-2019 20:25:21 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 92
+[06-May-2019 21:23:21 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 103
+[06-May-2019 21:24:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 103

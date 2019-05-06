@@ -1,6 +1,6 @@
 <?php
 
-function get_database_connection($dbname = "ottermart") {
+function get_database_connection($dbname = "soccer_dat") {
     $host = "localhost"; //cloud 9
     $user_name = 'root';
     $password = "";
