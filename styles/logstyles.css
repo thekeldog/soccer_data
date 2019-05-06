@@ -7,7 +7,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
+
 }
 
 a {
@@ -36,13 +36,10 @@ h2 {
   align-items: center;
   flex-direction: column; 
   justify-content: center;
-  width: 100%;
-  min-height: 100%;
   padding: 20px;
 }
 
 #formContent {
-  -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
   background: #fff;
   padding: 30px;
@@ -59,18 +56,15 @@ h2 {
   border-top: 1px solid #dce8f1;
   padding: 25px;
   text-align: center;
-
   border-radius: 0 0 10px 10px;
 }
 
 
 
 /* TABS */
-
 h2.inactive {
   color: #cccccc;
 }
-
 h2.active {
   color: #0d0d0d;
   border-bottom: 2px solid #18B028;
@@ -79,7 +73,6 @@ h2.active {
 
 
 /* FORM TYPOGRAPHY*/
-
 input[type=button], input[type=submit], input[type=reset]  {
   background-color: #18B028;
   border: none;
@@ -98,7 +91,6 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
 }
 
 input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
-
   transform: scale(0.95);
 }
 
