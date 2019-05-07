@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+      <link rel="shortcut icon" type="image/x-icon" href="/media/favicon.ico">
     <div id = "head">
     <?php
     include 'header.php';

@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+  <link rel="shortcut icon" type="image/x-icon" href="/media/favicon.ico">
   <div id = "head">
     <?php
     include 'header.php';?>
+    
   </div>
 
 <body>
@@ -70,21 +72,23 @@
           <img src="https://i.ebayimg.com/images/g/dnMAAOSwBahVdHDJ/s-l300.jpg" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" fill="#777">
           <h2>Bronze</h2>
           <p>Our Basic plan, covering introductory help to placing bets and understanding our visual data.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <br>
+          <p><a class="btn btn-secondary" href="subscriptions.php" role="button">View details &raquo;</a></p>
         </div>
         <!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="https://image.spreadshirtmedia.com/image-server/v1/mp/designs/12495359,width=178,height=178,version=1378727413/double-dollar-sign.png" width="140" height="140">
           <h2>Gold</h2>
           <p>A step up for those interested in getting more out of our predictions and soccer data, offers one on one support and more amenities.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <br>
+          <p><a class="btn btn-secondary" href="subscriptions.php" role="button">View details &raquo;</a></p>
         </div>
         <!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="http://images.clipartpanda.com/funding-clipart-money-dollarsigns-clipart.jpg" width="140" height="140">
           <h2>Premium Plus Platinum</h2>
           <p>The highest tier plan, for those who wish to get the best possible predictions and service, 24/7 customer support and constant visual updates about current data.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="subscriptions.php" role="button">View details &raquo;</a></p>
         </div>
         <!-- /.col-lg-4 -->
       </div>
