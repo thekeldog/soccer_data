@@ -55,8 +55,9 @@
           </div>
         </div>    
         </div>
-        
+        <!--
         <div class="row">
+        
         <h3>Select Data:</h3>
         <div class="dropdown">
           <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -65,14 +66,15 @@
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" id="queryLeagues">Leagues</a>
             <a class="dropdown-item" id="queryTeams">Teams</a>
-            <a class="dropdown-item" id="queryPlayers">Players</a>
           </div>
         </div>
         </div>
+        --->
         <div clas="row">
             <div class="column" id="picker"></div>
             <button class="btn btn-primary" id="viewLeagues">View League(s)</button>
         </div>
+        <div class="row" id="leagueTableHeader"></div>
         <div class="row" id="leagueTableRow"></div>
         <div class="row" id='tableRow'></div>
     </div>
