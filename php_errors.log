@@ -10,3 +10,8 @@
 [06-May-2019 20:25:21 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 92
 [06-May-2019 21:23:21 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 103
 [06-May-2019 21:24:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 103
+[07-May-2019 22:57:21 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 67
+[07-May-2019 22:57:44 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 67
+[07-May-2019 22:57:59 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 188
+[07-May-2019 23:01:23 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 187
+[07-May-2019 23:01:49 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 187

@@ -16,15 +16,23 @@
 <body>
     <div class="container" id="listCont">
         <div class="row">
-        <ul class='list-group list-group-horizontal' id='list-tab' role='tablist'>
-          <a class="list-group-item list-group-item-action active" id="list-leagues-list" data-toggle="list" href="#list-leagues" role="tab" aria-controls="leagues">Leagues</a>
-          <a class="list-group-item list-group-item-action" id="list-teams-list" data-toggle="list" href="#list-teams" role="tab" aria-controls="teams">Teams</a>
-          <a class="list-group-item list-group-item-action" id="list-players-list" data-toggle="list" href="#list-players" role="tab" aria-controls="players">Players</a>
-        </ul>
+        <h3>Select Data:</h3>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" id="queryLeagues">Leagues</a>
+            <a class="dropdown-item" id="queryTeams">Teams</a>
+            <a class="dropdown-item" id="queryPlayers">Players</a>
+          </div>
         </div>
-        <div class="row" id='tableRow'>
-            
         </div>
+        <div clas="row">
+            <div class="column" id="picker"></div>
+            <button class="btn btn-primary" id="viewLeagues">View League(s)</button>
+        </div>
+        <div class="row" id='tableRow'></div>
     </div>
     
     
