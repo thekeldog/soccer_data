@@ -1,4 +1,5 @@
 <?php
+require_once 'connection.php';
 
 session_start();
     // SQL Credentials 'mysql://sf1qzp17uzk5ms6f:p6n7qso52n2og7b7@bfjrxdpxrza9qllq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/lbkixx7usdyvo8hh'
