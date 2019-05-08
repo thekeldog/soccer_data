@@ -4,6 +4,8 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title> </title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -11,31 +13,49 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-       <a class="navbar-brand" href="#">Soccer Data</a>
+        <a class="navbar-brand" href="#">Soccer Data</a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                
-                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Stats <span class="sr-only">(current)</span></a>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="statistics.html">Statistics <span class="sr-only">(current)</span></a>
                 </li>
-                
-                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Predictions<span class="sr-only">(current)</span></a>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="predictions.html">Match Predictions<span class="sr-only">(current)</span></a>
                 </li>
-                
-                
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="subscriptions.html">Subscriptions<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact Us<span class="sr-only">(current)</span></a>
+                </li>
+
+
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                
+
                 <button class="btn btn-outline-success my-2 my-sm-0" id="logIn" type="submit">Log In</button>
-                 <button class="btn btn-outline-success my-2 my-sm-0" id="signIn" type="submit">Sign Up</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" id="signUp" type="submit">Sign Up</button>
             </form>
         </div>
     </nav>
+
+    <script>
+        $("#logIn").on("click", function(e) {
+            window.location = "login.html";
+        });
+        $("#signUp").on("click", function(e) {
+            window.location = "signup.html";
+        });
+    </script>
+
 </body>
 
 </html>
