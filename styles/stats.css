@@ -12,6 +12,10 @@
     height: 50px;
 }
 #mainContainer{
-    margin-top: 100px !important;
+    margin-top: 70px !important;
     /*padding-top: 200px !important;*/
+}
+#carouselExampleCaptions img{
+    width:1100px;
+    max-height: 350px;
 }
