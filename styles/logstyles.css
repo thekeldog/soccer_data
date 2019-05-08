@@ -58,7 +58,7 @@ h2 {
   background-color: #f6f6f6;
   border-top: 1px solid #dce8f1;
   padding: 25px;
-  text-align: center;
+  text-align: left;
 
   border-radius: 0 0 10px 10px;
 }
@@ -214,4 +214,8 @@ input[type=text]:placeholder {
 
 #icon {
   width:60%;
+}
+#homeButton {
+  background-color: #18B028;
+  padding-left:200px;
 }
