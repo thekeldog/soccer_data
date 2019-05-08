@@ -6,6 +6,7 @@
     include 'header.php';?>
     
   </div>
+  <script src = "js/signup.js" ></script>
 <title>Sign Up</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
       <img src="styles/uknown.png" id="icon" />
     </div>
     <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Username">
+      <input type="text" id="userName" class="fadeIn second" name="login" placeholder="Username">
       <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
       <input type="text" id="password2" class="fadeIn third" name="login" placeholder="Confirm Password">
         Subscription: <select id = "subscription"class="fadeIn fourth">
@@ -24,21 +25,15 @@
         <option value="Plat">Premium Plus Platinium</option>
         </select>
       <br>
-      <input type="submit" onclick="myFunction()"id = "signupButton"class="fadeIn fourth" value="Sign Up">
+      
       <br>
       <div id="error"> </div>
     </form>
+    <button id ="signupButton" class="btn btn-primary" value="Sign Up">Sign Up</button>
   </div>
 </div>
-<script>
-function myFunction() {
-  var sel = document.getElementById('subscription');
-  var opt = sel.options[sel.selectedIndex];
-  var text = opt.text;
-  alert("Thank you for signing up! Your plan is: " + text);
-  
-}
-</script>
+
+
 </body>
 
 </html>

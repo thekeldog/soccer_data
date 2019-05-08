@@ -1,11 +1,12 @@
+<head>
 <link href="styles/logstyles.css" rel="stylesheet" id="bootstrap-css">
   <div id = "head">
     <?php
     include 'header.php';?>
-    
   </div>
+  <script src="js/login.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
+</head>
 <div class="wrapper fadeInDown">
   <div id="formContent">
     <!-- Tabs Titles -->
@@ -20,17 +21,9 @@
     <form>
       <input type="text" id="login" class="fadeIn second" name="login" placeholder="Username">
       <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
-      <input type="submit" onclick="myFunction()"id = "loginButton"class="fadeIn fourth" value="Log In">
+      
     </form>
-
-   <script>
-  function myFunction() {
-  var sel = document.getElementById('login');
-  var opt = sel.value;
-  alert("Thank you for logging in, "+opt +"!");
-  
-}
-</script>
+    <button id ="loginButton" class="btn btn-primary" value="Log In">Log In</button>
 
   </div>
 </div>

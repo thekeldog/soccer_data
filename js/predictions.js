@@ -43,8 +43,17 @@ $("document").ready(function() {
     })
 
     $("#predict").click(function() {
-
         $.ajax({
+            type: "get",
+            url: "api/predictions.php",
+            dataType: "json",
+            data: {
+                'subscription':'true'
+            },
+            success: function(data) {
+                console.log(data[0]);
+                if (data[0] == "Plat"){
+                    $.ajax({
             type: "post",
             url: "http://35.243.223.222:8125/",
             dataType: "JSON",
@@ -71,6 +80,14 @@ $("document").ready(function() {
 
             }
         });
+                }
+            },
+            error: function(stats) {
+            console.log(stats)
+        
+            }
+        });
+        
         return false;
     })
 

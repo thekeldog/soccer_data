@@ -80,3 +80,52 @@
 [08-May-2019 07:06:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
 [08-May-2019 07:06:52 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
 [08-May-2019 07:06:52 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 17:24:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'kerice'@'localhost' (using password: YES)' in /home/ubuntu/workspace/soccer_data/api/predictions.php:52
+Stack trace:
+#0 /home/ubuntu/workspace/soccer_data/api/predictions.php(52): PDO->__construct('mysql:host=0.0....', 'kerice', 'cywudged5', Array)
+#1 /home/ubuntu/workspace/soccer_data/api/predictions.php(80): get_query_without_params('SELECT * FROM l...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/soccer_data/api/predictions.php on line 52
+[08-May-2019 19:27:01 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/soccer_data/api/signUp.php on line 84
+[08-May-2019 19:27:03 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/soccer_data/api/signUp.php on line 84
+[08-May-2019 19:27:03 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/soccer_data/api/signUp.php on line 84
+[08-May-2019 19:27:04 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/soccer_data/api/signUp.php on line 84
+[08-May-2019 19:27:09 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/soccer_data/api/signUp.php on line 84
+[08-May-2019 19:28:11 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/soccer_data/api/signUp.php on line 84
+[08-May-2019 19:39:12 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/userLogin.php on line 63
+[08-May-2019 19:40:02 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/userLogin.php on line 63
+[08-May-2019 19:41:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/userLogin.php on line 63
+[08-May-2019 19:41:45 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/userLogin.php on line 63
+[08-May-2019 19:42:03 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/soccer_data/api/predictions.php on line 97
+[08-May-2019 19:42:04 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/soccer_data/api/predictions.php on line 97
+[08-May-2019 19:43:07 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/userLogin.php on line 66
+[08-May-2019 19:44:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'kerice'@'localhost' (using password: YES)' in /home/ubuntu/workspace/soccer_data/api/predictions.php:52
+Stack trace:
+#0 /home/ubuntu/workspace/soccer_data/api/predictions.php(52): PDO->__construct('mysql:host=0.0....', 'kerice', 'cywudged5', Array)
+#1 /home/ubuntu/workspace/soccer_data/api/predictions.php(80): get_query_without_params('SELECT * FROM l...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/soccer_data/api/predictions.php on line 52
+[08-May-2019 19:45:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'kerice'@'localhost' (using password: YES)' in /home/ubuntu/workspace/soccer_data/api/predictions.php:52
+Stack trace:
+#0 /home/ubuntu/workspace/soccer_data/api/predictions.php(52): PDO->__construct('mysql:host=0.0....', 'kerice', 'cywudged5', Array)
+#1 /home/ubuntu/workspace/soccer_data/api/predictions.php(80): get_query_without_params('SELECT * FROM l...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/soccer_data/api/predictions.php on line 52
+[08-May-2019 19:45:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'kerice'@'localhost' (using password: YES)' in /home/ubuntu/workspace/soccer_data/api/predictions.php:52
+Stack trace:
+#0 /home/ubuntu/workspace/soccer_data/api/predictions.php(52): PDO->__construct('mysql:host=0.0....', 'kerice', 'cywudged5', Array)
+#1 /home/ubuntu/workspace/soccer_data/api/predictions.php(80): get_query_without_params('SELECT * FROM l...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/soccer_data/api/predictions.php on line 52
+[08-May-2019 19:47:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'soccer_data'' in /home/ubuntu/workspace/soccer_data/api/predictions.php:52
+Stack trace:
+#0 /home/ubuntu/workspace/soccer_data/api/predictions.php(52): PDO->__construct('mysql:host=0.0....', 'kerice', '2infinite', Array)
+#1 /home/ubuntu/workspace/soccer_data/api/predictions.php(80): get_query_without_params('SELECT * FROM l...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/soccer_data/api/predictions.php on line 52
+[08-May-2019 19:47:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'soccer_data'' in /home/ubuntu/workspace/soccer_data/api/predictions.php:52
+Stack trace:
+#0 /home/ubuntu/workspace/soccer_data/api/predictions.php(52): PDO->__construct('mysql:host=0.0....', 'kerice', '2infinite', Array)
+#1 /home/ubuntu/workspace/soccer_data/api/predictions.php(80): get_query_without_params('SELECT * FROM l...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/soccer_data/api/predictions.php on line 52

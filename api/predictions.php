@@ -11,9 +11,9 @@ function get_query_with_params($input, $params){
     
     //var_dump($hasConnUrl);
     $host = $hasConnUrl ? $connParts['host'] : getenv('IP');
-    $dbname = $hasConnUrl ? ltrim($connParts['path'],'/') : 'soccer_data';
-    $username = $hasConnUrl ? $connParts['user'] : getenv('C9_USER');
-    $password = $hasConnUrl ? $connParts['pass'] : 'cywudged5';
+    $dbname = $hasConnUrl ? ltrim($connParts['path'],'/') : 'soccer_dat';
+    $username = $hasConnUrl ? $connParts['user'] : 'kerice';
+    $password = $hasConnUrl ? $connParts['pass'] : '2infinite';
     $opts = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -41,9 +41,9 @@ function get_query_without_params($input){
     
     //var_dump($hasConnUrl);
     $host = $hasConnUrl ? $connParts['host'] : getenv('IP');
-    $dbname = $hasConnUrl ? ltrim($connParts['path'],'/') : 'soccer_data';
-    $username = $hasConnUrl ? $connParts['user'] : getenv('C9_USER');
-    $password = $hasConnUrl ? $connParts['pass'] : 'cywudged5';
+    $dbname = $hasConnUrl ? ltrim($connParts['path'],'/') : 'soccer_dat';
+    $username = $hasConnUrl ? $connParts['user'] : 'kerice';
+    $password = $hasConnUrl ? $connParts['pass'] : '2infinite';
     $opts = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -91,6 +91,9 @@ session_start();
             foreach($results as $result){
                 echo("<option value=\"".$result['team_name']."\">".$result['team_name']."</option>");
             }
+        }
+        if(isset($_GET['subscription'])){
+            echo(json_encode(array($_SESSION['subscription'])));
         }
         break;
         
