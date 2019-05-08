@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<div class ="head">
      <?php
         include 'header.php';
      ?>
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href='styles/stats.css'>
     <script type="text/javascript" src="js/stats.js"></script>
-</head>
-
+</div>
+<div class="row">
+<div class="container" id="mainContainer">
 <body>
     <div class="container" id="listCont">
         <div class="row">
@@ -36,7 +37,8 @@
     
 
 </body>
-
+</div>
+</div>
 <footer class="container">
       <?php
         include 'footer.php';
