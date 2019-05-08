@@ -46,7 +46,7 @@ $(document).ready(function(){
                 success: function(data) {
                     if(data['success'] === true){
                         //console.log(data);
-                        window.location.href = '../index.php';
+                        window.location.href = 'index.php';
                     }else{
                         /*
                         $('#failMessage').html(data['message'])
