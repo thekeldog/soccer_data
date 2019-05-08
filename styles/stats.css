@@ -1,0 +1,13 @@
+#listCont{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group-horizontal{
+    justify-content: center;
+    align-content: flex-start;
+}
+#viewLeagues{
+    width: 150px;
+    height: 50px;
+}

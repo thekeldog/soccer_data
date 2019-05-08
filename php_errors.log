@@ -1,0 +1,82 @@
+[06-May-2019 20:11:10 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting identifier (T_STRING) in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 90
+[06-May-2019 20:11:41 UTC] PHP Parse error:  syntax error, unexpected '$results' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 91
+[06-May-2019 20:13:08 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 90
+[06-May-2019 20:13:08 UTC] PHP Stack trace:
+[06-May-2019 20:13:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[06-May-2019 20:13:08 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:18
+[06-May-2019 20:13:08 UTC] PHP   3. get_leagues() /home/ubuntu/workspace/soccer_data/api/soccer.php:63
+[06-May-2019 20:13:08 UTC] PHP   4. json_decode() /home/ubuntu/workspace/soccer_data/api/soccer.php:90
+[06-May-2019 20:20:01 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 91
+[06-May-2019 20:25:21 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 92
+[06-May-2019 21:23:21 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 103
+[06-May-2019 21:24:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 103
+[07-May-2019 22:57:21 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 67
+[07-May-2019 22:57:44 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 67
+[07-May-2019 22:57:59 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 188
+[07-May-2019 23:01:23 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 187
+[07-May-2019 23:01:49 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 187
+[08-May-2019 04:40:36 UTC] PHP Parse error:  syntax error, unexpected 'build_table' (T_STRING) in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 74
+[08-May-2019 04:41:59 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 86
+[08-May-2019 04:42:28 UTC] PHP Fatal error:  Call to undefined function make_curl() in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 87
+[08-May-2019 04:42:28 UTC] PHP Stack trace:
+[08-May-2019 04:42:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 04:42:28 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 04:42:28 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 05:31:27 UTC] PHP Parse error:  syntax error, unexpected 'curl_setopt' (T_STRING) in /home/ubuntu/workspace/soccer_data/api/curler.php on line 29
+[08-May-2019 05:31:27 UTC] PHP Stack trace:
+[08-May-2019 05:31:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 05:48:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 95
+[08-May-2019 05:48:25 UTC] PHP Stack trace:
+[08-May-2019 05:48:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 05:48:25 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 05:48:25 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 05:48:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 95
+[08-May-2019 05:48:53 UTC] PHP Stack trace:
+[08-May-2019 05:48:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 05:48:53 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 05:48:53 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 05:55:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 95
+[08-May-2019 05:55:57 UTC] PHP Stack trace:
+[08-May-2019 05:55:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 05:55:57 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 05:55:57 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 06:03:05 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 96
+[08-May-2019 06:14:36 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, string given in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 96
+[08-May-2019 06:14:36 UTC] PHP Stack trace:
+[08-May-2019 06:14:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 06:14:36 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 06:14:36 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 06:14:36 UTC] PHP   4. array_keys() /home/ubuntu/workspace/soccer_data/api/soccer.php:96
+[08-May-2019 06:16:29 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, string given in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 96
+[08-May-2019 06:16:29 UTC] PHP Stack trace:
+[08-May-2019 06:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 06:16:29 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 06:16:29 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 06:16:29 UTC] PHP   4. array_keys() /home/ubuntu/workspace/soccer_data/api/soccer.php:96
+[08-May-2019 06:18:48 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, string given in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 96
+[08-May-2019 06:18:48 UTC] PHP Stack trace:
+[08-May-2019 06:18:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 06:18:48 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 06:18:48 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 06:18:48 UTC] PHP   4. array_keys() /home/ubuntu/workspace/soccer_data/api/soccer.php:96
+[08-May-2019 06:20:53 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, string given in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 96
+[08-May-2019 06:20:53 UTC] PHP Stack trace:
+[08-May-2019 06:20:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 06:20:53 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 06:20:53 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 06:20:53 UTC] PHP   4. array_keys() /home/ubuntu/workspace/soccer_data/api/soccer.php:96
+[08-May-2019 07:05:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 99
+[08-May-2019 07:05:48 UTC] PHP Stack trace:
+[08-May-2019 07:05:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 07:05:48 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 07:05:48 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 07:06:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 99
+[08-May-2019 07:06:34 UTC] PHP Stack trace:
+[08-May-2019 07:06:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 07:06:34 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 07:06:34 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
+[08-May-2019 07:06:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/soccer_data/api/soccer.php on line 99
+[08-May-2019 07:06:52 UTC] PHP Stack trace:
+[08-May-2019 07:06:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/soccer_data/api/soccer.php:0
+[08-May-2019 07:06:52 UTC] PHP   2. onGet() /home/ubuntu/workspace/soccer_data/api/soccer.php:19
+[08-May-2019 07:06:52 UTC] PHP   3. build_table() /home/ubuntu/workspace/soccer_data/api/soccer.php:74
