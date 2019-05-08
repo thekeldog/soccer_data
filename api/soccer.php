@@ -150,6 +150,7 @@ session_start();
           
           // Process the results if there are any
           $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+          echo("<h2>Available Leagues</h2>");
           echo('<table class="table table-striped table-dark" id="leaguesTable">');
           echo('<thead><tr><th scope="col">Name</th>');
           echo('<th scope="col">Nation</th>');
@@ -200,7 +201,7 @@ session_start();
           // Process the results if there are any
           $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
           echo('<form class="form-group">
-              <label for="leagueSelect">Select League</label>
+              <label for="leagueSelect"><h3>Select League</h3></label>
               <select class="form-control" id="leagueSelect">
               <option>All</option>
               ');
@@ -234,7 +235,7 @@ session_start();
         // Setup to exception on errors (will go to php_errors.log)
         // $var = 5;
         // $var_is_greater_than_two = ($var > 2 ? true : false); // returns true
-        echo($league_slug. "Teams");
+        echo("<h2>All " .$league_slug. " Teams</h2>");
         try{
           $dbConn = get_database_connection(); 
           // Compose the SQL statement

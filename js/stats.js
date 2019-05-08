@@ -1,35 +1,38 @@
 $(document).ready( function(){
     console.log("I'm ready!");
     
-    // $.ajax({
-    //     type:"POST",
-    //     url: "http://35.243.223.222:8125/build_table",
-    //     dataType: "JSON",
-    //     data: JSON.stringify({"league_name": "nonsense",
-    //             "year" : "2017-2018"
-    //     }),
-    //     success: function(data){
-    //         console.log(data);
-    //     }
-    // })
-    
+    $.ajax({
+        type: "GET",
+        url: "./api/soccer.php",
+        dataType: "html",
+        data: {"dataRequested" : 'leagues'},
+        success: function(data, status){
+            $('#tableRow').html(data);
+        }
+    })
+    $.ajax({
+        type: "GET",
+        url: "./api/soccer.php",
+        dataType: "html",
+        data: {"dataRequested" : 'leaguePicker'},
+        success: function(data){
+            $('#picker').html(data);
+            $('#viewLeagues').show();
+        }
+    })
+
     $('#viewLeagues').hide();
         // get league data when first loading page
         $('#queryLeagues').click(function() {
-           $.ajax({
-            type: "GET",
-            url: "./api/soccer.php",
-            dataType: "html",
-            data: {"dataRequested" : 'leagues'},
-            success: function(data, status){
-                 $('#tableRow').html(data);
-            }
-            }) 
-        })
+ 
+    })
         
         $('#viewLeagues').click(function(){
+            $('#leaguesTable').hide();
+            $('#leaguesTable').html('');
             var league = $('#leagueSelect option:selected').val();
             var slug = $();
+            var prettyLeague = $('#leagueSelect option:selected').text();
             $.ajax({
                 type: "GET",
                 url: "./api/soccer.php",
@@ -51,6 +54,9 @@ $(document).ready( function(){
                 },
                 success: function(data, status){
                     //console.log(data);
+                    var headerString = ("2018-2019 " + prettyLeague + " League Table")
+                    $('#leagueTableHeader').html("<h2>" +headerString+"</h2>")
+                    
                     $('#leagueTableRow').html(data)
                 }
             })
@@ -60,20 +66,6 @@ $(document).ready( function(){
         // tab on clicks
         $('#queryTeams').click(function(){
             console.log("teams clicked")
-            $('#leaguesTable').hide();
-            $('#leaguesTable').html('');
-            
-            $.ajax({
-                type: "GET",
-                url: "./api/soccer.php",
-                dataType: "html",
-                data: {"dataRequested" : 'leaguePicker'},
-                success: function(data){
-                    $('#picker').html(data);
-                    $('#viewLeagues').show();
-                }
-            })
-            
 
         })
         
