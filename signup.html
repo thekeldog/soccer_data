@@ -3,9 +3,8 @@
 <link href="styles/logstyles.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<title>Log In</title>
+<title>Sign Up</title>
 </head>
-
 
 <body>
 <div class="wrapper fadeInDown">
@@ -16,14 +15,19 @@
     <form>
       <input type="text" id="login" class="fadeIn second" name="login" placeholder="Username">
       <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
-      <input type="submit" class="fadeIn fourth" value="Log In">
-       <div id="error"> </div>
+      <input type="text" id="password2" class="fadeIn third" name="login" placeholder="Confirm Password">
+        <select class="fadeIn fourth">
+        <option value="Bronze">Bronze</option>
+        <option value="Gold">Gold</option>
+        <option value="Plat">Premium Plus Platinium</option>
+        </select> <br>
+      <input type="submit" class="fadeIn fourth" value="Sign Up">
+      <div id="error"> </div>
     </form>
 
 
   </div>
 </div>
-
-
 </body>
+
 </html>
