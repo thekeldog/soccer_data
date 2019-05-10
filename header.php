@@ -42,6 +42,7 @@
         </ul>
         <form class="form-inline mt-2 mt-md-0">
                                             <!--replace by login button -->
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href = "profile.php">User Profile</a></button>                               
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href = "login.php">Login</a></button>
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href = "signup.php">Signup</a></button>
         </form>
