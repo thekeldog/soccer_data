@@ -1,14 +1,11 @@
 <?php
 
 function get_database_connection($dbname = "soccer_dat") {
-    // $host = "localhost"; //cloud 9
-    // $user_name = 'root';
-    // $password = "";
+    $host = "localhost"; //cloud 9
+    $user_name = 'root';
+    $password = "";
     
-    $host = "bfjrxdpxrza9qllq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-    $dbname = "lbkixx7usdyvo8hh";
-    $username = "sf1qzp17uzk5ms6f";
-    $password = "p6n7qso52n2og7b7";
+
     
     /*
     Host 	bfjrxdpxrza9qllq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com 	
@@ -22,13 +19,12 @@ function get_database_connection($dbname = "soccer_dat") {
     */
     
     
-    
     if(strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
        
-        $host = "bfjrxdpxrza9qllq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-        $dbname = "lbkixx7usdyvo8hh";
-        $username = "sf1qzp17uzk5ms6f";
-        $password = "p6n7qso52n2og7b7";
+        $host = "x3ztd854gaa7on6s.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+        $dbname = "syx2c1kyb99wclfe";
+        $username = "udllv8c9u8gom2uq";
+        $password = "sg46k7eh9eammrdl";
     } 
 
     
