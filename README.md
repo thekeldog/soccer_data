@@ -3,7 +3,7 @@
 We will be using models developed using Sklearn to predict match outcomes between two teams. Our site offers tiered membership for users. Through tiered membership users gain access to match statistics, predictions, and much more. The website is currently in beta.
 ## Usage  
 
-The application can be run from the browser at the following link: https://cst336project1.herokuapp.com/
+The application can be run from the browser at the following link: http://soccer-dat.herokuapp.com/
 
 
 ## Contributors  
