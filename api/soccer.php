@@ -80,7 +80,7 @@ session_start();
 
     }
     function build_table($params){
-      $url = "http://35.243.223.222:8125/build_table";
+      $url = "https://35.243.223.222:8125/build_table";
       //echo json_encode($params);
       //$league_slug = get_league_slug_from_name($params["league_name"]);
       //echo ($league_slug);

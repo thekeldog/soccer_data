@@ -55,7 +55,7 @@ $("document").ready(function() {
                 if (data[0] == "Plat"){
                     $.ajax({
             type: "post",
-            url: "http://35.243.223.222:8125/",
+            url: "https://35.243.223.222:8125/",
             dataType: "JSON",
             data: JSON.stringify({
                 "model": "build",
