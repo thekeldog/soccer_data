@@ -35,9 +35,12 @@ color: #999;
                         </p>
                         <img src="styles/uknown.png" width = 100; height = 100; style = "padding-bottom:20px;"id="icon" />
                        <div style = "padding-bottom:20px;"class="btn-group">
-                            <button type="button" class="btn btn-primary">
+                            <button id = "deleteAccount" type="button" class="btn btn-primary">
                                 Delete your account!
                                 </button>
+                        </div>
+                        <div style = "padding-bottom:10px;">
+                            Subscription Type: <?php echo($_SESSION["subscription"])?>
                         </div>
                         <div class = "changeSubscription">
                             Change Subscription Type: <select id = "subscription"class="fadeIn fourth">
