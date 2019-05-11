@@ -34,7 +34,7 @@ $(document).ready(function(){
       
    });
    $("#confirmChange").click(function(){
-      console.log('deleting account'); 
+      console.log('changed subscription'); 
       
       let subscription = $('#subscription :selected').val();
       let userPassword = $('#password').val();
@@ -64,9 +64,6 @@ $(document).ready(function(){
                 }
             });
       
-   });
-   $('#registerButton').click(function(){
-      window.location.href = 'register.php';
    });
     
 });

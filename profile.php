@@ -16,6 +16,7 @@ line-height: 1.428571429;
 color: #999;
 }</style>
 <!------ Include the above in your HEAD tag ---------->
+<script src="js/user.js"></script>
 </head>
 <div style = "padding-top:70px;"class="container">
     <div class="row">
